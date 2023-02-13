@@ -157,6 +157,10 @@ a{
     top:50% ;
     transform: translateX(-50%);
 }
+.block:not(:last-child){
+    margin-bottom: 25px;
+}
+
 .block{
     font-family: 'Poppins', sans-serif;
     display: grid;
@@ -198,4 +202,62 @@ a{
 }
 .about_us {
     margin-top: 75px;
+}
+.reverse{
+    grid-template-areas: "img title"
+                        "img text"
+                         "img btn";
+}
+.who_block{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas: "img title"
+                            "img text"
+                             "img items";
+}
+.img_video{
+    grid-area: img;
+    position: relative;
+}
+.img_video img:first-child{
+    position: absolute;
+    top: 39%;
+    left: -5%;
+}
+.img_video img:nth-child(2){
+    position: relative;
+    width: 525px;
+    height: 452px;
+}
+.img_video a{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 41%;
+    font-size: 25px;
+}
+.img_video a :before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: white;
+    display: block;
+    position: absolute;
+}
+.who_block h1{
+    grid-area: title;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 8px;
+    width: max-content;
+}
+.who_block h1:before{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+    display: block;
+    position: relative;
+    left: 20%;
+    transform: translateX(-50%);
 }
