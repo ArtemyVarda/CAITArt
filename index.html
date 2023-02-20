@@ -4,17 +4,20 @@
         <meta charset="UTF-8">
         <title>Basic</title>
         <link rel="stylesheet" href="./Style/style.CSS.css">
+        <link rel="stylesheet" href="./Style/font-awesome.min.css">
+        <link rel="stylesheet" href="./Style/LineIcons.css">
     </head>
     <body>
         <img class="bg" src="./images/banner-bg.svg" alt="banner-bg">
-        <header>
+        <a href="#header" class="up"><i class="lni-chevron-up"></i></a>
+        <header id="header">
             <div class="container header">
                 <a class="logo" href="#"><img src="./images/logo.svg" alt=""></a>
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Futures</a>
-                    <a href="#">About</a>
-                    <a href="#">Why</a>
+                    <a href="#header">Home</a>
+                    <a href="#futures">Futures</a>
+                    <a href="#about">About</a>
+                    <a href="#who">Why</a>
                     <a href="#">Team</a>
                     <a href="#">Block</a>
                 </nav>
@@ -39,7 +42,7 @@
                 <img src="./images/brand-5.png" alt="">
             </div>
         </div>
-        <div class="infor">
+        <div id="futures" class="infor">
             <div class="container">
                 <div class="titl"><b>Clean and simple design,</b>Comes with everything you need to get started</div>
                 <div class="cards">
@@ -73,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="about_us">
+        <div id="about" class="about_us">
             <div class="container">
                 <div class="blocks">
                     <div class="block">
@@ -98,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <div class="who">
+        <div id="who" class="who">
             <div class="container who_block">
                 <input id="mod" type="checkbox">
                 <div class="bgv"></div>
@@ -124,6 +127,11 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="container">
+                <div class="titl">Meet Our <b> Creative Team <br> Members</b></div>
             </div>
         </div>
     </body>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .header{
     display: grid;
@@ -214,6 +215,8 @@ a{
     grid-template-areas: "img title"
                             "img text"
                              "img items";
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 .img_video{
     grid-area: img;
@@ -311,4 +314,23 @@ a{
     transform: rotate(45deg);
     text-align: center;
     font-size: 19px;
+}
+.up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background: linear-gradient(90deg,#33c8c1 0%, #119bd2 100%);
+    border-radius: 6px;
+}
+.up i{
+    font-family: 'LineIcons', sans-serif;
+    font-style: normal;
+}
+.up i:before{
+    content: "\ea43";
+    position: relative;
+    top: 30%;
+    left: 30%;
 }
