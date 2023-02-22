@@ -334,3 +334,61 @@ a{
     top: 30%;
     left: 30%;
 }
+.team{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 85px;
+    font-size: 25px;
+    text-align: center;
+}
+.team_blocks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    margin: 0 auto;
+    grid-column-gap: 25px;
+}
+.team_block{
+    width: 350px;
+    height: 408px;
+    display: grid;
+    grid-template-rows: 2fr 1fr ;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 4px #00000026;
+}
+.links{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    z-index: 5;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    height: max-content;
+    padding: 15px 25px;
+    background: #ffffff3a;
+    border-radius: 25px;
+}
+.team_img{
+    position: relative;
+}
+.links a:not(:last-child){
+    margin-right: 8px;
+}
+.team_text{
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.team_text span{
+    font-size: 14px;
+    color: #666;
+}
+.team_block:hover .links{
+    background: linear-gradient(#fe8464, #fe6e9a);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.team_img img{
+    width: 350px;
+}
