@@ -334,12 +334,7 @@ a{
     top: 30%;
     left: 30%;
 }
-.team{
-    font-family: 'Poppins', sans-serif;
-    margin-top: 85px;
-    font-size: 25px;
-    text-align: center;
-}
+
 .team_blocks{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -391,4 +386,70 @@ a{
 }
 .team_img img{
     width: 350px;
+}
+.titl{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.comment{
+    width: 350px;
+    height: 376px;
+    padding: 25px;
+    box-shadow: 0 0 5px #00000059;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.comm_img{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.stars{
+    color: #fe8464;
+}
+.lni-quotation{
+    color: #2e82ef;
+    font-size: 30px;
+}
+.comment .text_block{
+    width: 100%;
+    margin-top: 15px;
+}
+.avtor{
+    position: relative;
+}
+.user_backgr{
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: -5;
+}
+.user_foto{
+    position: absolute;
+    left: 20%;
+    transform: translate(-50%);
+    width: 85px;
+    padding-top: 13px;
+}
+.avtor h3,
+.avtor .text_block{
+    margin-left: 37%;
+
+}
+.avtor h3{
+    padding-top: 25px;
+}
+.avtor .text_block{
+    margin-top: 5px;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.comment_block{
+    margin-top: 40px;
 }
