@@ -402,6 +402,9 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #ffffff;
+    transition: all .4s linear;
 }
 .comm_img{
     display: flex;
@@ -445,6 +448,7 @@ a{
 }
 .avtor .text_block{
     margin-top: 5px;
+    font-family: 'Lato', sans-serif;
 }
 .comments{
     display: flex;
@@ -452,4 +456,53 @@ a{
 }
 .comment_block{
     margin-top: 40px;
+}
+.comment:hover,
+.active{
+    border: 1px solid #fe8464;
+}
+.comment:hover .lni-quotation,
+.active .lni-quotation{
+    color: #fe8464;
+}
+.titl h3{
+    text-align: left;
+}
+.post{
+    width: 350px;
+    height: 453px;
+    font-family: 'Poppins', sans-serif;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 13px;
+    padding-right: 30%;
+    color: #666666;
+}
+.tx{
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+.sl{
+    color: #fe8464;
+    font-size: 15px;
+}
+.posts{
+    display: flex;
+    justify-content: space-between;
+}
+.blog_post{
+    margin-top: 35px;
+}
+.blog_post .titl:before {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+    display: block;
+    position: relative;
+    transform: translateX(-50%);
+    left: 7%;
 }
