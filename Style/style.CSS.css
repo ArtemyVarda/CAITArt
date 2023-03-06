@@ -506,3 +506,59 @@ a{
     transform: translateX(-50%);
     left: 7%;
 }
+.contack_block{
+    width: 1150px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #0000007F;
+    display: flex;
+    justify-content: space-between;
+    height: 259px;
+    padding: 40px 50px 90px;
+    background: white;
+}
+.contack_block .titl{
+    text-align: left;
+    width: max-content;
+    height: 129px;
+    margin: calc(259px / 2 - 47px / 2 - 130px / 2) 0;
+}
+.contack_block .titl:before{
+    display: none;
+}
+.contack_block form{
+    display: flex;
+    justify-content: space-around;
+    width: 495px;
+    height: 65px;
+    margin: calc(259px / 2 - 65px / 4 - 130px / 2) 0;
+}
+.contack_block form input[type="text"]{
+    width: calc(100% - 118px);
+    padding-left: 25px;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+}
+.contack_block form input[type="submit"]{
+    width: 118px;
+    background:linear-gradient(90deg,#fe8464, #fe6e9a);
+    color: white;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.contack_block form input[type="text"]:focus{
+    border: 2px solid #361cc1;
+    border-right: none
+}
+.footer_svg{
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    bottom: 0;
+}
+footer{
+    position: relative;
+}
